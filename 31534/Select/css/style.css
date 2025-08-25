@@ -1,0 +1,79 @@
+body
+
+{
+
+            width :100% ;
+
+}
+
+ 
+
+#global
+
+{
+
+            width :80% ;
+
+            margin :auto ;
+
+            padding :25px ;
+
+            background :#3c3c3c ;
+
+}
+
+ 
+
+.header
+
+{
+
+            width :75% ;
+           
+              
+}
+
+ 
+
+#menu-gauche
+
+{
+
+            width :20% ;
+
+            float :left ;
+
+}
+
+ 
+
+#contenu
+
+{
+
+           width :75% ;
+            height :70% ;
+
+}
+
+ 
+
+#sidebar-droite
+
+{
+
+            width :20% ;
+
+            float :left ;
+
+}
+
+ 
+
+footer
+
+{
+
+            width :100%
+
+}
